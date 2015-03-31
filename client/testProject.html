@@ -1,0 +1,16 @@
+<head>
+    <title>testProject</title>
+</head>
+
+<body>
+    <h3>Form Test</h3>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            {{> insertBookForm}}
+        </div>
+    </div>
+</body>
+
+<template name="insertBookForm">
+    {{> quickForm collection="Library" id="insertBookForm" type="update" doc=doc}}
+</template>
